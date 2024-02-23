@@ -153,16 +153,113 @@ switch (fruit) {
     default:
         console.log("I don't like fruits.");
 }
-const personOne ={
-    age: 50,
-    eyeColor: "blue"
+const personOne = {
+    firstName: "Johan"
+    
 };
-
-let someArr = ["ashish", "Someone else"]
-console.log(someArr);
+console.table(personOne)
 
 
+const useStart = "This string implements the startsWith() method.";
+console.log(useStart.startsWith("continue"), 
+useStart.startsWith("mohan"));
+
+const useEnd = "This string implements the endsWith() method.";
+console.log(useEnd.endsWith("clear() method."), 
+useEnd.endsWith("rohit."));
+
+const useIncludes = "This string implements the includes() method.";
+console.log(useIncludes.includes("includes()"), 
+useIncludes.includes("ravi"));
+
+const newArr = Array.from("rohit, sohan, johan");
+console.log("Implementing Array.from(): ", newArr)
+
+const milkProducts = ["Curd", "Cheese", "Butter", "Ice-Cream", 2, 4, ];
+const arrayKeys = milkProducts.keys();
+console.log("Implementing Array.keys(): ")
+for(let key of arrayKeys){
+    console.log(key)
+    };
+
+    function Myname(){
+        console.log("A");
+        console.log("s");
+        console.log("i");
+        console.log("g");
+        console.log("h");
+    }
+
+    Myname()
+    Myname()
+
+    function AddNum(a,b){
+        console.log("This is addition of two no.",a+b);
+    }
+ AddNum(50,120)
+ AddNum(520,120)
+ AddNum(50,120)
+ AddNum(530,120)
+ AddNum(507,120)
+ AddNum(580,120)
+
+ const INDIANCOASTGUARD= {
+    CGHQ:  "DELHI",
+    RHQ:   "MUMBAI",
+    DHQ:   "KOCHI",
+    SHIP:  "VRH",
+    
+ };
+ console.table(INDIANCOASTGUARD)
+
+ const Buvik ={
+    Name: "Rahul",
+    Rank:   "Nvk",
+    PNo:    "12345",
+    Unit:   "VRH",
+     };
+console.table(Buvik)
+
+function userlogged(user){
+    console.log("This one is user");
+    return`${user} has logged in.`;
+    }
+    console.log(userlogged('Johan'));
+
+    function userlogged(user){
+        console.log("this one is not a user as admin");
+        return`${user} has not logged in.`;
+    }
+console.log(userlogged('Mohit is a valid user for the admin account'));
+
+    
+function AddNum(a,b){
+    console.log("This is addition of two no.",a-b);
+}
+AddNum(50,120)
+AddNum(520,120)
+AddNum(50,120)
+AddNum(530,120)
+AddNum(507,120)
+AddNum(580,120)
+
+var fourteen="thids"; 
+var sixteen="joti"; 
+var newstring='new string is made up of'+first+second;
+console.log("this is addtion of two quantity", fourteen+sixteen);
+console.table(newstring);
+
+const women = {
+name: 'Sara',
+age: 25,
+gender: 'female'
+}
+
+let {name, age, gender} = women;
+console.log(name);
+console.log(age);
+console.log(gender);
 
 
-
+ 
 
