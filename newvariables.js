@@ -153,7 +153,13 @@ switch (fruit) {
     default:
         console.log("I don't like fruits.");
 }
+const personOne ={
+    age: 50,
+    eyeColor: "blue"
+};
 
+let someArr = ["ashish", "Someone else"]
+console.log(someArr);
 
 
 
