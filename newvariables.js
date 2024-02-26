@@ -123,9 +123,11 @@ console.log(d);
 
 const o = "Hello learners"
 console.log(a);
- 
+
+
 const q = 400;
 console.log(b);
+
  
 const l = "12";
 console.log(l);
@@ -261,5 +263,107 @@ console.log(age);
 console.log(gender);
 
 
- 
+ const accountUser = "SomeoneAcc"
+ //? const accountUser1 = "SomeoneAcc"
+ let accountEmail = "Somethingjs@gmail.com"
+ var accountPassword = "something@0905"
+ accountCity ="Mumbai"
+ let accountName;
+
+ accountEmail = "SomethingElse@gmail.com"
+ accountEmail = "myemail@gmail.com"
+
+ accountPassword = 457854965658
+ accountCity = "Dehradun"
+
+ console.table([
+    accountUser,
+    accountEmail,
+    accountPassword,
+    accountCity,
+    accountName
+ ])
+
+ const accountUser1 = "SomeoneEEE"
+
+ let accountEmail1 = "Somethingjs@email.com "
+ var accountPassword1= "something$djkfdfh"
+accountCity1 = "Delhi"
+let accountName1 = "hira"
+
+accountEmail1 = "Somethingelse@gmail.com"
+accountEmail1 = "myemail@gmail.com"
+
+accountPassword1 = 445445488564894486
+accountCity1 = "Haryana"
+accountnumber = 45456466456456
+
+console.table([
+    accountUser1,
+    accountEmail1,
+    accountPassword1,
+    accountCity1,
+    accountName1,
+    accountnumber
+])
+
+function show(a, b, ...args) {
+    console.log(a); // one
+    console.log(b); // two
+    console.log(args); // ["three", "four", "five", "six"]
+  }
+  
+  show('one', 'two', 'three', 'four', 'five', 'six')
+
+  let arr1 = ['one', 'two'];
+let arr2 = [...arr1, 'three', 'four', 'five']; 
+console.log(arr2); // ["one", "two", "three", "four", "five"]
+
+let greet = x => console.log(x);
+greet('Hello'); // Hello 
+
+let great = x => console.log(x);
+greet('how are you ');
+
+let greatS = y => console.log(y);
+great('i am fine')
+
+let aayu = 20;
+
+let welcome = (aayu < 18) ?
+  () => console.log('Baby') :
+  () => console.log('Adult');
+
+welcome(); // Baby
+
+let ages = 15;
+let welcomes = (ages<20) ?
+() => console.log('Baby'):
+() => console.log('Adult');
+
+welcomes();
+
+let Age = 25;
+let Welcome = ( age<30) ?
+() => console.log('Young'):
+() => console.log('Adult');
+
+Welcome();
+
+let Sum = (a, b) => {
+    let result = a + b;
+    return result;
+}
+
+let result1 = Sum(5,7);
+console.log(result1); // 12
+
+let sums = (a, b) => {
+    let result = a+b;
+    return result;
+}
+let result2 = sums(8,10);
+console.log(result2);
+
+
 
