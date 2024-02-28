@@ -4,10 +4,33 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    
+      
 </head>
+
 <body>
-    <p id="my-paragraph"> This is a my-paragraph</p>
-    <button id = "my-button"> click me! </button>
+    <h1>Welcome to the Toy Store!</h1>
+    <div id="toyContainer">
+        <div class="toy" id= "specialToy">
+            <h2>Special Toy</h2>
+            <p>This is a special toy with Id "specialToy".</p>
+        </div>
+    <div class="toy"> 
+        <h2>Red Car</h2>
+        <p>This is a red car.</p>
+    </div>
+    <div class="toy">
+        <h2>Blue Ball</h2>
+        <p>This is a blue ball.</p>
+    </div>
+    
+    </div>
+    <button onclick="changeSpecialToyText()">Change Special Toy Text</button>
 </body>
+<script>
+    document.getElementById("FirstId").innerHTML = "<P>This is a paragraph.</p>";
+    const HeadingOne = document.getElementById("headOne");
+    HeadingOne.textContent = "This is Heading One"
+</script>
 <script src="Dom.js"></script>
 </html>

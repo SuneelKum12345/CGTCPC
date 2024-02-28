@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Virtual Keyboard</title>
+    <style>
+        body {
+display: flex;
+justify-content: center;
+align-items: center;
+flex-direction: column;
+height: 100vh;
+margin: 0;
+background-color:forestgreen;
+        }
+        .keyboard {
+            display: grid;
+            grid-template-columns: repeat(14, 1fr);
+            gap: 5px;
+            max-width: 600px;
+            background-color: aquamarine;
+            font-weight: bold;
+        }
+        .key {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 50px;
+            block-size: 50;
+            word-spacing: 2;
+            border: 1px solid #ccc;
+            background-color: #fff;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+            background-color: red;
+        }
+        .key:hover {
+            background-color: blue
+        }
+            
+         #testBox {
+            width: 400px;
+            height: 30px;
+            padding: 5px;
+            font-size: 16px;
+            display: flex;
+            justify-content: first baseline;
+            align-items: center;
+        }
+        
+        
+        inpt {
+            display: flex;
+            justify-content: center;
+            margin: 50px;
+            flex-direction: row;
+            background-color: aquamarine;
+        
+
+        }
+        </style>
+</head>
+<body>
+    <div id="inpt">
+        <input type="text" id="textBox"placeholder="Type here">
+
+    </div>
+
+    <div class="keyboard" onclick="handleKeyClick(event)">
+        <div class="key">&#126;&#96;</div>
+        <div class="key">&#33;&#49;</div>
+        <div class="key">&#50;</div>
+        <div class="key">&#51;</div>
+        <div class="key">&#52;</div>
+        <div class="key">&#53;</div>
+        <div class="key">&#54;</div>
+        <div class="key">&#55;</div>
+        <div class="key">&#56;</div>
+        <div class="key">&#57;</div>
+        <div class="key">&#48;</div>
+        <div class="key">&#45;</div>
+        <div class="key">&#43;</div>
+        <div class="key">&#8592;Backspace</div>
+        <div class="key">&#8592;Tab&#8594;</div>
+        <div class="key">&#81;</div>
+        <div class="key">&#87;</div>
+        <div class="key">&#917;</div>
+        <div class="key">&#82;</div>
+        <div class="key">&#84;</div>
+        <div class="key">&#89;</div>
+        <div class="key">&#85;</div>
+        <div class="key">&#73;</div>
+        <div class="key">&#79;</div>
+        <div class="key">&#80;</div>
+        <div class="key">&#91;</div>
+        <div class="key">&#93;</div>
+        <div class="key">&#92;</div>
+        <div class="key">Caps Lock</div>
+        <div class="key">&#913;</div>
+        <div class="key">&#83;</div>
+        <div class="key">&#68;</div>
+        <div class="key">&#70;</div>
+        <div class="key">&#71;</div>
+        <div class="key">&#919;</div>
+        <div class="key">&#74;</div>
+        <div class="key">&#922;</div>
+        <div class="key">&#76;</div>
+        <div class="key">&#58;</div>
+        <div class="key">&#59;</div>
+        <div class="key">' "</div>
+        <div class="key">&#8629;Enter</div>
+        <div class="key">&#8593;Shift</div>
+        <div class="key">&#918;</div>
+        <div class="key">&#935;</div>
+        <div class="key">&#67;</div>
+        <div class="key">&#86;</div>
+        <div class="key">&#914;</div>
+        <div class="key">&#925;</div>
+        <div class="key">&#77;</div>
+        <div class="key">.,</div>
+        <div class="key"> &lt; </div>
+        <div class="key">></div>
+        <div class="key">/ </div>
+        <div class="key">?</div>
+        <div class="key">Shift</div>
+        <div class="key">Ctrl</div>
+        <div class="key">Win</div>
+        <div class="key">Alt</div>
+        <div class="key"> &#32;Space Key</div>
+        <div class="key">Alt</div>
+        <div class="key">Win</div>
+        <div class="key">Right Click</div>
+        <div class="key">Ctrl</div>
+              
+    </div>
+
+<script>
+    function handleKeyClick(event) {
+        if
+        (event.target.classList.contains('key')) {
+            document.getElementById('textBox').value += event.target.innerText;
+        }
+
+    }
+</script>
+
+    
+</body>
+</html>

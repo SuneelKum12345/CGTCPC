@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>eventlistner Example</title>
+    <style>
+        .button {
+            background-color:black;
+        }
+        #demo {
+            color: blue;
+        }
+    </style>
+</head>
+<body>
+    <h1 id="demo">Click the button to change this text according by you</h1>
+    <button id="myButton">Click me!</button>
+    
+    <script>
+        const button =document.getElementById('myButton');
+        button.style.color= 'red';
+    
+    
+    button.addEventListener('click', function(){
+
+        const Paragraph = document.getElementById('demo');
+
+        Paragraph.textContent = 'Text changed!';
+        Paragraph.textContent ='Learn while you play!';
+    })
+    </script>
+</body>
+</html>

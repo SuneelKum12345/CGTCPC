@@ -366,4 +366,18 @@ let result2 = sums(8,10);
 console.log(result2);
 
 
+const rhd = 'Mukul';
+console.log(rhd);
 
+var counter = 15;
+var showCounter = () => console.log(counter);
+
+console.log(window.counter);
+window.showCounter();
+
+const width = window.innerWidth
+|| document.documentElement.clientWidth
+|| document.body.clientWidth;
+
+const height = window.innerHeight
+|| document.documentElement.

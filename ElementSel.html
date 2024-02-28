@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+       <title>Selector Examples</title>
+       <style>
+        .highlight {
+            background-color: yellow;
+        }
+        #main {
+            color: blue;
+        }
+       </style>
+</head>
+<body>
+    <h1 id ="main">Main Heading 1</h1>
+    <p class="highlight">Highlighted Paragraph2 </p>
+    <p>Normal Paragraph3</p>
+    <p class="highlight">Another Highlighted Paragraph 4</p>
+    <p class="highlight">Another Highlighted Paragraph5 </p>
+
+</body>
+    <script>
+        const mainHeading = document.getElementById('main');
+        mainHeading.style.color= 'red';
+        mainHeading.style.color='blue';
+
+        const hpara = document.getElementsByClassName('highlight');
+        
+        hpara[0].style.backgroundColor = 'lightblue';
+        hpara[1].style.backgroundColor = 'lightblue';
+        
+        hpara[0].innerHTML = "this is first one"
+        hpara[1].innerHTML = "this is second"
+        hpara[2].innerHTML = "this is third"
+        
+        const allpara = document.getElementsByTagName('p');
+        allpara[0].style.border = '1px solid black';
+        allpara[1].style.border = '1px solid black';
+        allpara[2].style.border = '1px solid black';
+        allpara[3].style.border = '1px solid black';
+        
+        const fHPara = document.querySelector('.highlight');
+        fHPara.style.fontSize = '20px';
+
+        const AllPara = document.querySelectorAll('.highlight');
+        AllPara[0].style.color = 'green';
+        AllPara[1].style.color = 'green';
+    </script>
+</html>
