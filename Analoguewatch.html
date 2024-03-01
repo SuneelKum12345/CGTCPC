@@ -11,15 +11,17 @@
             justify-content: center;
             height: 100vh;
             margin: 0;
+            background-color: aqua;
         }
 
         .watch {
             width: 200px;
             height: 200px;
-            border: 10px; solid #333;
+            border: 10px solid #333;
             border-radius: 50%;
             position: relative;
             transform: rotate(90deg);
+            background-color: blueviolet;
         }
         .hour, .minute, .second {
             position: absolute;
@@ -28,18 +30,26 @@
             background: #333;
             top: 50%;
             transform-origin: 100%;
-            transform: rotate(0deg);
+            transform: rotate(10deg);
             transform-origin: 100%;
-
+        }
             .minute {
                 height: 1px;
                 background:#555;
+                transform: rotate(0deg);
+                background-color: black;
             }
-        }
+
+            .second {
+                height: 1px;
+                background: #f00;
+                transform: rotate(30deg);
+            }
+        
     </style>
 </head>
 <body>
-    <div class="watch"></div>
+    <div class="watch">
     <div class="hour" id="hour"></div>
     <div class="minute" id="minute"></div>
     <div class="second" id="second"></div>
@@ -61,10 +71,11 @@
 
             hourElement.style.transform = 'rotate(${hourDeg}deg)';
             minuteElement.style.transform = 'rotate(${minuteDeg}deg)';
-            secondElement.style.transform ='rotate(${secondDeg}deg)';}
+            secondElement.style.transform ='rotate(${secondDeg}deg)';
+        }
             
             setInterval(updateClock, 1000);
-            updateClock();
+            updateClock();  // Initial update 
     </script>
     
 </body>

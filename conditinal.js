@@ -29,7 +29,7 @@ if (age >= 18) {
     console.log("You are not eligible for dirving licence")
 };
 
-const num1 = 0;
+const num1 = 1;
 
 if (num1>0) {
     console.log("Givin number is positive.");
@@ -40,7 +40,7 @@ if (num1>0) {
 
 };
 
-const marks = 0;
+const marks = 95;
 let Branch;
 
 switch (true) {
