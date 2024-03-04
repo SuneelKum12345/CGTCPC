@@ -1,0 +1,29 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    background-color: aqua;
+    
+}
+
+.weather-container {
+    text-align: center;
+    color: blueviolet;
+    background-color: blue;
+}
+input {
+    padding: 8px;
+    margin-right: 8px;
+    color: brown;
+    background-color: chartreuse;
+}
+
+button {
+    padding: 8px;
+    cursor: pointer;
+    color: brown;
+    background-color: blue;
+}
